@@ -353,7 +353,9 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.WIDTH);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_DEPTH, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.DEPTH);
-    createAction(ActionType.SORT_HOME_FURNITURE_BY_HEIGHT, preferences, 
+    createAction(ActionType.SORT_HOME_FURNITURE_BY_VOLUME, preferences,
+        furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.VOLUME);
+    createAction(ActionType.SORT_HOME_FURNITURE_BY_HEIGHT, preferences,
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.HEIGHT);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_X, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.X);
@@ -393,7 +395,7 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.WIDTH);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_DEPTH, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.DEPTH);
-    createAction(ActionType.DISPLAY_HOME_FURNITURE_DEPTH, preferences,
+    createAction(ActionType.DISPLAY_HOME_FURNITURE_VOLUME, preferences,
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.VOLUME);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_HEIGHT, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.HEIGHT);
@@ -1429,12 +1431,10 @@ public class HomePane extends JRootPane implements HomeView {
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.WIDTH);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_DEPTH, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.DEPTH);
-    addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_HEIGHT,
-
-        displayPropertyActions, HomePieceOfFurniture.SortableProperty.VOLUME);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_VOLUME,
-
-              displayPropertyActions, HomePieceOfFurniture.SortableProperty.HEIGHT);
+        displayPropertyActions, HomePieceOfFurniture.SortableProperty.VOLUME);
+    addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_HEIGHT,
+        displayPropertyActions, HomePieceOfFurniture.SortableProperty.HEIGHT);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_X, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.X);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_Y, 

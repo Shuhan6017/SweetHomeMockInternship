@@ -919,7 +919,7 @@ public class FurnitureTable extends JTable implements View, Printable {
             writer.write(sizeFormat.format(copiedPiece.getDepth()));
             break;
           case VOLUME :
-              writer.write(sizeFormat.format(copiedPiece.getDepth()));
+              writer.write(sizeFormat.format(copiedPiece.getVolume()));
               break;
           case HEIGHT : 
             writer.write(sizeFormat.format(copiedPiece.getHeight()));
@@ -1346,7 +1346,7 @@ public class FurnitureTable extends JTable implements View, Printable {
               public Component getTableCellRendererComponent(JTable table,
                  Object value, boolean isSelected, boolean hasFocus, int row, int column) {
                       return super.getTableCellRendererComponent(table,
-                              value != null  ? ((HomePieceOfFurniture)value).getDepth()  : null,
+                              value != null  ? ((HomePieceOfFurniture)value).getVolume()  : null,
                               isSelected, hasFocus, row, column);
                   }
               };

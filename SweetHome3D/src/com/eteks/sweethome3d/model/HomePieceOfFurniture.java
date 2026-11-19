@@ -251,7 +251,6 @@ public class HomePieceOfFurniture extends HomeObject implements PieceOfFurniture
   private float                  width;
   private float                  depth;
   private float                  height;
-  private float                  volume;
   private float                  elevation;
   private float                  dropOnTopElevation;
   private boolean                movable;

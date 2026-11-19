@@ -531,6 +531,7 @@ public class FurnitureController implements Controller {
               HomePieceOfFurniture.SortableProperty.NAME, 
               HomePieceOfFurniture.SortableProperty.WIDTH,
               HomePieceOfFurniture.SortableProperty.DEPTH,
+              HomePieceOfFurniture.SortableProperty.VOLUME,
               HomePieceOfFurniture.SortableProperty.HEIGHT,
               HomePieceOfFurniture.SortableProperty.X,
               HomePieceOfFurniture.SortableProperty.Y,
